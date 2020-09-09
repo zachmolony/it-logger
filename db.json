@@ -4,7 +4,7 @@
             "id": 1,
             "message": "Changed HDD on workstation 005",
             "attention": false,
-            "date": "23-9-2020",
+            "date": "09-23-2020",
             "tech": "Zach Molony"
         },
         {
@@ -18,7 +18,7 @@
             "id": 3,
             "message": "Changed GPU on workstation 020",
             "attention": false,
-            "date": "21-03-2020",
+            "date": "03-12-2020",
             "tech": "Brad T"
         }
     ],

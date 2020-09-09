@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import LogItem from './LogItem'
+import Loader from '../layout/Loader'
 
 const Logs = () => {
     const [logs, setLogs] = useState([])
@@ -17,6 +18,10 @@ const Logs = () => {
     useEffect(() => {
         getLogs()
     }, [])
+
+    if (loading) {
+        return <Loader />
+    }
 
     return (
         <ul className='collection with-header'>
