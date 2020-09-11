@@ -7,13 +7,15 @@ import AddButton from './components/layout/AddButton'
 import AddLogModal from './components/logs/AddLogModal'
 import AddTechModal from './components/techs/AddTechModal'
 import TechListModal from './components/techs/TechListModal'
+import { Provider } from 'react-redux'
+import store from './store'
 
 const App = () => {
   useEffect(() => {
     M.AutoInit()
   })
   return (
-    <>
+    <Provider store={store}>
       <SearchBar />
       <div className='container'>
         <AddButton />
@@ -22,7 +24,7 @@ const App = () => {
         <TechListModal />
         <Logs />
       </div>
-    </>
+    </Provider>
   )
 }
 
